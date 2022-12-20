@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="DashStyle.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">  
+            <button class="logout" onclick="logOut()">
+                logout
+            </button>
+            <div class="userData">
+                <img id="imaage"  alt="avatar">
+                <p id="name" class="Name">Name</p>
+
+            </div>
+        </div>
+        <div class="ToDoBody">
+            <div class="AddTask">
+                <label for="tofo">Add Task</label>
+                <input type="text" id="AddTask" name="AddTask">
+                <button id="btn0" onclick="addTask()">Add</button>
+            </div>
+            <div class="ToDoList" id="container">
+                <!-- <div class="Tasks">
+                    <p class="task">Pay the rent</p>
+                    <button id="btn1">Completed</button>
+                    <button id="btn2">Delete</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="dash.js"></script>
+
+</body>
+</html>
